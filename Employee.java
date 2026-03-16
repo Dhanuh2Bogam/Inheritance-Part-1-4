@@ -1,15 +1,29 @@
 // A class to represent employees in general (20-page manual).
 public class Employee {
-    public int getHours() {
-        return 40;           // works 40 hours / week
+    private String name;
+    private String job;
+
+    public Employee(String name, String job){
+        this.name = name;
+        this.job = job;
+    }
+
+    public Employee(String name){
+        this(name, "Employee");
+    }
+     public int getHours() {
+        return 35; // works 35 hours / week
     }
     
     public double getSalary() {
-        return 40000.0;      // $40,000.00 / year
+        return 47250.0;      // $40,000.00 / year
     }
     
     public int getVacationDays() {
-        return 10;           // 2 weeks' paid vacation
+        return 15;           // 2 weeks' paid vacation
+    }
+    public void shout(){
+        System.out.println("I love my job!");
     }
 
     public String toString() {

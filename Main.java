@@ -1,15 +1,15 @@
 class Main {
     public static void main(String[] args) {
-        superPrinting();
-        // constructorPrinting();
-        // polyPrinting();
+       // superPrinting();
+         //constructorPrinting();
+        polyPrinting();
     }
 
     public static void superPrinting() {
-        Employee e1 = new Employee();
-        Lawyer e2 = new Lawyer();
-        Secretary e3 = new Secretary();
-        LegalSecretary e4 = new LegalSecretary();
+        Employee e1 = new Employee("Alice");
+        Lawyer e2 = new Lawyer("Bob");
+        Secretary e3 = new Secretary("Carol");
+        LegalSecretary e4 = new LegalSecretary("dave");
 
         System.out.println("Employee:\n" + e1);
         System.out.println("Lawyer:\n" + e2); 
@@ -17,7 +17,7 @@ class Main {
         System.out.println("Legal Secretary:\n" + e4);
     }
 
-    /*
+    
     public static void constructorPrinting() {
         Employee e1 = new Employee("Arav");
         Lawyer e2 = new Lawyer("Abigale");
@@ -29,9 +29,9 @@ class Main {
         System.out.println(e3);
         System.out.println(e4);
     }
-    */
     
-    /*
+    
+    
     public static void polyPrinting() {
         Employee[] employees = {
             new Employee("Sush"), 
@@ -43,7 +43,7 @@ class Main {
             System.out.println(e);
             e.shout();
         }
-    } */
+    } 
 
 
 
